@@ -1,4 +1,4 @@
 CoverGrabber
 ============
 
-Hi-res cover art grabber
+Hi-res cover art grabber.
