@@ -9,8 +9,10 @@ Currently supported sites:
 - iTunes music
 - Google play
 - Steam
+
 Please note the artwork may be copyrighted.
 
-The extension is currently available for Opera here:
-https://addons.opera.com/en/extensions/details/hi-res-cover-art-grabber/
+The extension is currently available here:
+- Chrome: https://chrome.google.com/webstore/detail/hi-res-cover-art-grabber/oiagpaldkopdbolnebgjlmihmejjkaji
+- Opera: https://addons.opera.com/en/extensions/details/hi-res-cover-art-grabber/
 
