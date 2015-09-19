@@ -1,5 +1,4 @@
-$(function(){
-	var p = $('img.game_header_image').attr('src');
-	p = p.replace(/_292x136/g, '').split('?')[0];
-	chrome.extension.sendMessage({ imageLink: p});
+chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+  var p = $('img.game_header_image_full').attr('src');
+  sendResponse({imageUri: p});
 });
