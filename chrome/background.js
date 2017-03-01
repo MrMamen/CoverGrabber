@@ -4,13 +4,13 @@ chrome.runtime.onInstalled.addListener(function () {
     // With a new rule ...
     chrome.declarativeContent.onPageChanged.addRules([
       {
-        // That fires when a page's URL contains a 'g' ...
         conditions: [
           new chrome.declarativeContent.PageStateMatcher({
             pageUrl: {hostEquals: 'play.google.com'}
           }),
           new chrome.declarativeContent.PageStateMatcher({
-            pageUrl: {hostEquals: 'itunes.apple.com'}
+            pageUrl: {hostEquals: 'itunes.apple.com'},
+            css: ["img.artwork"]
           }),
           new chrome.declarativeContent.PageStateMatcher({
             pageUrl: {hostEquals: 'store.steampowered.com'}

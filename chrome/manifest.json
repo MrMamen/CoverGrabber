@@ -1,11 +1,8 @@
 {
   "name": "Hi-res cover art grabber",
-  "developer": {
-    "name": "MrMamen"
-  },
   "description": "Retrieves larger versions of cover art on various online stores, like App Store.",
   "manifest_version": 2,
-  "version": "1.6.0",
+  "version": "1.7.0",
   "page_action": {
     "default_icon": {
       "19": "icons/button-19.png",
@@ -32,26 +29,23 @@
   "content_scripts": [
     {
       "js": [
-        "includes/jquery-2.0.3.min.js",
         "includes/googlePlay.js"
       ],
       "matches": [
-        "*://play.google.com/store/apps/*"
+        "*://play.google.com/store/apps/*",
+        "*://play.google.com/music/*"
       ]
     },
     {
       "js": [
-        "includes/jquery-2.0.3.min.js",
         "includes/iTunes.js"
       ],
       "matches": [
-        "*://itunes.apple.com/*app/*",
-        "*://itunes.apple.com/*album/*"
+        "*://itunes.apple.com/*/*"
       ]
     },
     {
       "js": [
-        "includes/jquery-2.0.3.min.js",
         "includes/steam.js"
       ],
       "matches": [
