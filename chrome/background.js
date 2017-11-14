@@ -13,6 +13,12 @@ chrome.runtime.onInstalled.addListener(function () {
             css: ["img.artwork"]
           }),
           new chrome.declarativeContent.PageStateMatcher({
+            pageUrl: {hostEquals: 'www.microsoft.com'}
+          }),
+          new chrome.declarativeContent.PageStateMatcher({
+            pageUrl: {hostEquals: 'store.playstation.com'}
+          }),
+          new chrome.declarativeContent.PageStateMatcher({
             pageUrl: {hostEquals: 'store.steampowered.com'}
           })
         ],

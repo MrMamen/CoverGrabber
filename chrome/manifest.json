@@ -2,7 +2,7 @@
   "name": "Hi-res cover art grabber",
   "description": "Retrieves larger versions of cover art on various online stores, like App Store.",
   "manifest_version": 2,
-  "version": "1.7.0",
+  "version": "1.8.0",
   "page_action": {
     "default_icon": {
       "19": "icons/button-19.png",
@@ -42,6 +42,22 @@
       ],
       "matches": [
         "*://itunes.apple.com/*/*"
+      ]
+    },
+    {
+      "js": [
+        "includes/microsoft.js"
+      ],
+      "matches": [
+        "https://www.microsoft.com/*/store/p/*"
+      ]
+    },
+    {
+      "js": [
+        "includes/playstation.js"
+      ],
+      "matches": [
+        "https://store.playstation.com/*"
       ]
     },
     {
