@@ -9,6 +9,8 @@ Currently supported sites:
 - iTunes music
 - Google play
 - Steam
+- Playstation store
+- Microsoft/XBox store
 
 Please note the artwork may be copyrighted.
 
