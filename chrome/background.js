@@ -26,14 +26,15 @@ chrome.runtime.onInstalled.addListener(function () {
         actions: [new chrome.declarativeContent.ShowPageAction()]
       }
     ]);
-    chrome.pageAction.onClicked.addListener(function (tab) {
-        chrome.tabs.sendMessage(tab.id, {greeting: "hello"}, function(response) {
-          if (localStorage["target"] == "newTab") {
-            chrome.tabs.create({"url": response.imageUri});
-          } else {
-            chrome.tabs.update({"url": response.imageUri});
-          }
-        });
-    });
+  });
+});
+
+chrome.pageAction.onClicked.addListener(function (tab) {
+  chrome.tabs.sendMessage(tab.id, {greeting: "hello"}, function(response) {
+    if (localStorage["target"] == "newTab") {
+      chrome.tabs.create({"url": response.imageUri});
+    } else {
+      chrome.tabs.update({"url": response.imageUri});
+    }
   });
 });
